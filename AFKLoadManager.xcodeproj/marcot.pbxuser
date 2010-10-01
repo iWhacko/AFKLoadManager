@@ -157,20 +157,21 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 307586851;
-			PBXWorkspaceStateSaveDate = 307586851;
+			PBXPerProjectTemplateStateSaveDate = 307589999;
+			PBXWorkspaceStateSaveDate = 307589999;
 		};
 		perUserProjectItems = {
-			8F862F3912556C27005D8CB9 /* PBXTextBookmark */ = 8F862F3912556C27005D8CB9 /* PBXTextBookmark */;
-			8F862F4812556C4D005D8CB9 /* PlistBookmark */ = 8F862F4812556C4D005D8CB9 /* PlistBookmark */;
-			8F862F5912556DEB005D8CB9 /* PBXTextBookmark */ = 8F862F5912556DEB005D8CB9 /* PBXTextBookmark */;
-			8F862F5B12556DEB005D8CB9 /* PBXTextBookmark */ = 8F862F5B12556DEB005D8CB9 /* PBXTextBookmark */;
-			8F862F5D12556DEB005D8CB9 /* PBXTextBookmark */ = 8F862F5D12556DEB005D8CB9 /* PBXTextBookmark */;
-			8F862F5E12556DEB005D8CB9 /* PBXTextBookmark */ = 8F862F5E12556DEB005D8CB9 /* PBXTextBookmark */;
-			8F862F6D12556E1E005D8CB9 /* PBXTextBookmark */ = 8F862F6D12556E1E005D8CB9 /* PBXTextBookmark */;
-			8F862F8E12557078005D8CB9 /* PBXTextBookmark */ = 8F862F8E12557078005D8CB9 /* PBXTextBookmark */;
-			8F862F8F12557078005D8CB9 /* PBXTextBookmark */ = 8F862F8F12557078005D8CB9 /* PBXTextBookmark */;
-			8F862FA212557229005D8CB9 /* PBXTextBookmark */ = 8F862FA212557229005D8CB9 /* PBXTextBookmark */;
+			8F862F3912556C27005D8CB9 = 8F862F3912556C27005D8CB9 /* PBXTextBookmark */;
+			8F862F4812556C4D005D8CB9 = 8F862F4812556C4D005D8CB9 /* PlistBookmark */;
+			8F862F5912556DEB005D8CB9 = 8F862F5912556DEB005D8CB9 /* PBXTextBookmark */;
+			8F862F5B12556DEB005D8CB9 = 8F862F5B12556DEB005D8CB9 /* PBXTextBookmark */;
+			8F862F5D12556DEB005D8CB9 = 8F862F5D12556DEB005D8CB9 /* PBXTextBookmark */;
+			8F862F5E12556DEB005D8CB9 = 8F862F5E12556DEB005D8CB9 /* PBXTextBookmark */;
+			8F862F6D12556E1E005D8CB9 = 8F862F6D12556E1E005D8CB9 /* PBXTextBookmark */;
+			8F862F8E12557078005D8CB9 = 8F862F8E12557078005D8CB9 /* PBXTextBookmark */;
+			8F862F8F12557078005D8CB9 = 8F862F8F12557078005D8CB9 /* PBXTextBookmark */;
+			8F862FA212557229005D8CB9 = 8F862FA212557229005D8CB9 /* PBXTextBookmark */;
+			8F862FB412557385005D8CB9 /* PBXTextBookmark */ = 8F862FB412557385005D8CB9 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 8F862F081255672E005D8CB9 /* Source Control */;
 		userBuildSettings = {
@@ -257,9 +258,9 @@
 	};
 	8F862F1B1255688D005D8CB9 /* DemoImageLoaderController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1859, 2208}}";
-			sepNavSelRange = "{3724, 0}";
-			sepNavVisRange = "{540, 390}";
+			sepNavIntBoundsRect = "{{0, 0}, {1652, 2112}}";
+			sepNavSelRange = "{3649, 245}";
+			sepNavVisRange = "{1990, 2118}";
 		};
 	};
 	8F862F3912556C27005D8CB9 /* PBXTextBookmark */ = {
@@ -282,7 +283,7 @@
 		);
 		name = "/Users/marcot/Documents/XCode/AFKLoadManager/AFKLoadManager-Info.plist";
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	8F862F5912556DEB005D8CB9 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -363,5 +364,15 @@
 		rType = 0;
 		vrLen = 2296;
 		vrLoc = 1760;
+	};
+	8F862FB412557385005D8CB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8F862F1B1255688D005D8CB9 /* DemoImageLoaderController.m */;
+		name = "DemoImageLoaderController.m: 107";
+		rLen = 245;
+		rLoc = 3649;
+		rType = 0;
+		vrLen = 2118;
+		vrLoc = 1990;
 	};
 }
