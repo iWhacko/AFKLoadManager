@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "DemoImageLoaderController.h"
+
 @interface AFKLoadManagerAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
+	
+	DemoImageLoaderController *controller;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

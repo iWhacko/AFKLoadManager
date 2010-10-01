@@ -18,8 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
-    // Override point for customization after application launch.
-    
+	controller = [[DemoImageLoaderController alloc] init];
+	
+	[window addSubview:controller.view];
     [window makeKeyAndVisible];
     
     return YES;
