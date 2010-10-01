@@ -26,13 +26,13 @@ Calling +queueDownloadFromURL:withHTTPParameters:target:selector:atTopOfQueue
 
 The parameters of +queueDownloadFromURL:withHTTPParameters:target:selector:atTopOfQueue are as follows:
 
-```objc
-  + (void) queueDownloadFromURL:(NSURL *) url 
-             withHTTPParameters:(NSDictionary *) parameters 
-                         target:(id) target 
-                       selector:(SEL) selector 
-                   atTopOfQueue:(BOOL) atTopOfQueue;
-```
+<pre>
++ (void) queueDownloadFromURL:(NSURL *) url 
+           withHTTPParameters:(NSDictionary *) parameters 
+                       target:(id) target 
+                     selector:(SEL) selector 
+                 atTopOfQueue:(BOOL) atTopOfQueue;
+</pre>
 
 The parameters are as follows:
 
@@ -47,7 +47,12 @@ The callback method
 
 The callback method receives a pointer to an NSData object that contains the information downloaded from the web:
 
-http://gist.github.com/605607
+<pre>
+- (void) imageLoaded:(NSData *) data {
+  // data contains the data loaded from the web,
+  // or Nil in the event of an error
+}
+</pre>
 
 The demo
 --------
