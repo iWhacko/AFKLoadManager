@@ -1,0 +1,119 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* AFKLoadManagerAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1652, 304}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 354}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* AFKLoadManager */ = {
+		activeExec = 0;
+		executables = (
+			8F862EFB12556723005D8CB9 /* AFKLoadManager */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 8F862EFB12556723005D8CB9 /* AFKLoadManager */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* AFKLoadManager */;
+		codeSenseManager = 8F862F091255672E005D8CB9 /* Code sense */;
+		executables = (
+			8F862EFB12556723005D8CB9 /* AFKLoadManager */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1474,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 307586851;
+			PBXWorkspaceStateSaveDate = 307586851;
+		};
+		perUserProjectItems = {
+			8F862F0C1255674F005D8CB9 /* PBXTextBookmark */ = 8F862F0C1255674F005D8CB9 /* PBXTextBookmark */;
+			8F862F0D1255674F005D8CB9 /* PBXTextBookmark */ = 8F862F0D1255674F005D8CB9 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 8F862F081255672E005D8CB9 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8F862EFB12556723005D8CB9 /* AFKLoadManager */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = AFKLoadManager;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	8F862F081255672E005D8CB9 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	8F862F091255672E005D8CB9 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8F862F0C1255674F005D8CB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* AFKLoadManagerAppDelegate.h */;
+		name = "AFKLoadManagerAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 354;
+		vrLoc = 0;
+	};
+	8F862F0D1255674F005D8CB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* AFKLoadManagerAppDelegate.h */;
+		name = "AFKLoadManagerAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 354;
+		vrLoc = 0;
+	};
+}
