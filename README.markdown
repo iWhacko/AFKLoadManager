@@ -26,7 +26,13 @@ Calling +queueDownloadFromURL:withHTTPParameters:target:selector:atTopOfQueue
 
 The parameters of +queueDownloadFromURL:withHTTPParameters:target:selector:atTopOfQueue are as follows:
 
-http://gist.github.com/605599
+```objc
++ (void) queueDownloadFromURL:(NSURL *) url 
+           withHTTPParameters:(NSDictionary *) parameters 
+                       target:(id) target 
+                     selector:(SEL) selector 
+                 atTopOfQueue:(BOOL) atTopOfQueue;
+```
 
 The parameters are as follows:
 
