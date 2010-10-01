@@ -26,7 +26,7 @@ Calling +queueDownloadFromURL:withHTTPParameters:target:selector:atTopOfQueue
 
 The parameters of +queueDownloadFromURL:withHTTPParameters:target:selector:atTopOfQueue are as follows:
 
-<script src="http://gist.github.com/605599.js"> </script>
+http://gist.github.com/605599
 
 The parameters are as follows:
 
@@ -41,7 +41,7 @@ The callback method
 
 The callback method receives a pointer to an NSData object that contains the information downloaded from the web:
 
-<script src="http://gist.github.com/605607.js?file=gistfile1.m"></script>
+http://gist.github.com/605607
 
 The demo
 --------
