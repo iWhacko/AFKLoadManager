@@ -27,11 +27,11 @@ Calling +queueDownloadFromURL:withHTTPParameters:target:selector:atTopOfQueue
 The parameters of +queueDownloadFromURL:withHTTPParameters:target:selector:atTopOfQueue are as follows:
 
 ```objc
-+ (void) queueDownloadFromURL:(NSURL *) url 
-           withHTTPParameters:(NSDictionary *) parameters 
-                       target:(id) target 
-                     selector:(SEL) selector 
-                 atTopOfQueue:(BOOL) atTopOfQueue;
+  + (void) queueDownloadFromURL:(NSURL *) url 
+             withHTTPParameters:(NSDictionary *) parameters 
+                         target:(id) target 
+                       selector:(SEL) selector 
+                   atTopOfQueue:(BOOL) atTopOfQueue;
 ```
 
 The parameters are as follows:
