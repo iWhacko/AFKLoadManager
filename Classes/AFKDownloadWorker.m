@@ -48,7 +48,10 @@
 		} else {
 			urlRequest = [[[NSMutableURLRequest alloc] initWithURL:self.url] autorelease];
 		}
+	} else {
+		urlRequest = [[[NSMutableURLRequest alloc] initWithURL:self.url] autorelease];
 	}
+
 	
 	[urlRequest setHTTPMethod:self.method];
 
