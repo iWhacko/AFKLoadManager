@@ -19,7 +19,6 @@
 
 
 - (void) processQueue {
-
 	if (liveWorkers.count < self.maximumWorkers) {
 		
 		if (queue.count) {
@@ -39,22 +38,18 @@
 	} else {
 		[[NSNotificationCenter defaultCenter] postNotificationName:kAFKDownloadManagerActivityEnded object:self];
 	}
-
 }
 
 
 - (void) workerIsDone:(AFKDownloadWorker *) worker {
-
 	worker.downloadManager = Nil;
 	[liveWorkers removeObject:worker];
 	
 	[self processQueue];
-	
 }
 
 
 - (void) enqueueWorker:(AFKDownloadWorker *) worker atTopOfQueue:(BOOL) atTopOfQueue {
-	
 	if (atTopOfQueue) {
 		[queue insertObject:worker atIndex:0];
 	} else {
@@ -62,15 +57,12 @@
 	}
 
 	[self processQueue];
-	
 }
 
 
 - (void) setMaximumWorkers:(int) value {
-
 	maximumWorkers = value;
 	[self processQueue];
-	
 }
 
 
@@ -79,7 +71,6 @@
 
 
 + (AFKDownloadManager *) defaultManager {
-	
 	static AFKDownloadManager *globalInstance;
 	
 	if (!globalInstance) {
@@ -87,12 +78,10 @@
 	}
 	
 	return globalInstance;
-	
 }
 
 
 + (void) queueDownloadFromURL:(NSURL *) url withHTTPParameters:(NSDictionary *) parameters target:(id) target selector:(SEL) selector atTopOfQueue:(BOOL) atTopOfQueue {
-	
 	AFKDownloadManager *manager = [AFKDownloadManager defaultManager];
 
 	AFKDownloadWorker *worker = [[AFKDownloadWorker new] autorelease];
@@ -106,12 +95,29 @@
 	worker.selector = selector;
 	
 	[manager enqueueWorker:worker atTopOfQueue:atTopOfQueue];
+}
+
+
++ (void) queueDownloadFromURL:(NSURL *) url method:(NSString *) method queryParameters:(NSDictionary *) queryParameters HTTPParameters:(NSDictionary *) HTTPParameters target:(id) target selector:(SEL) selector atTopOfQueue:(BOOL) atTopOfQueue {
+	AFKDownloadManager *manager = [AFKDownloadManager defaultManager];
 	
+	AFKDownloadWorker *worker = [[AFKDownloadWorker new] autorelease];
+	
+	worker.url = url;
+	worker.method = method;
+	worker.queryParameters = queryParameters;
+	worker.HTTPParameters = HTTPParameters;
+	
+	worker.downloadManager = manager;
+	
+	worker.target = target;
+	worker.selector = selector;
+	
+	[manager enqueueWorker:worker atTopOfQueue:atTopOfQueue];
 }
 
 
 - (id) init {
-
 	if (self = [super init]) {
 		queue = [NSMutableArray new];
 		liveWorkers = [NSMutableArray new];
@@ -119,17 +125,14 @@
 	}
 	
 	return self;
-	
 }
 
 
 - (void) dealloc {
-
 	[queue release];
 	[liveWorkers release];
 	
 	[super dealloc];
-	
 }
 
 

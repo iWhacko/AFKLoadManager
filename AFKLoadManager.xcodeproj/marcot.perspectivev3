@@ -231,6 +231,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -276,6 +278,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>7</integer>
+									<integer>5</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -308,14 +313,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>8F862F0A1255674F005D8CB9</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DemoImageLoaderController.m</string>
+								<string>AFKDownloadWorker.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,22 +326,22 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>8F862F0B1255674F005D8CB9</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>DemoImageLoaderController.m</string>
+										<string>AFKDownloadWorker.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8F862FB412557385005D8CB9</string>
+										<string>8FCDFBB0125D78C3003EB5FF</string>
 										<key>history</key>
 										<array>
 											<string>8F862F3912556C27005D8CB9</string>
 											<string>8F862F4812556C4D005D8CB9</string>
-											<string>8F862F5912556DEB005D8CB9</string>
-											<string>8F862F5B12556DEB005D8CB9</string>
-											<string>8F862F5D12556DEB005D8CB9</string>
 											<string>8F862F5E12556DEB005D8CB9</string>
-											<string>8F862F6D12556E1E005D8CB9</string>
 											<string>8F862F8E12557078005D8CB9</string>
-											<string>8F862FA212557229005D8CB9</string>
+											<string>8F862FB812557E0E005D8CB9</string>
+											<string>8FCDFBAD125D78C3003EB5FF</string>
+											<string>8FCDFBAE125D78C3003EB5FF</string>
+											<string>8FCDFBAF125D78C3003EB5FF</string>
+											<string>8F862F6D12556E1E005D8CB9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -461,11 +464,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>8F862FB512557385005D8CB9</string>
+				<string>8FCDFBB1125D78C3003EB5FF</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>8F862FB612557385005D8CB9</string>
+				<string>8FCDFBB2125D78C3003EB5FF</string>
 				<string>8F862F0A1255674F005D8CB9</string>
-				<string>8F862FB712557385005D8CB9</string>
+				<string>8FCDFBB3125D78C3003EB5FF</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>

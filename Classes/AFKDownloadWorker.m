@@ -12,7 +12,7 @@
 
 @implementation AFKDownloadWorker
 
-@synthesize url, HTTPParameters, downloadManager, target, selector, running, urlConnection, content;
+@synthesize method, url, queryParameters, HTTPParameters, downloadManager, target, selector, running, urlConnection, content;
 
 
 #pragma mark -
@@ -20,9 +20,38 @@
 
 
 - (void) start {
+	NSString *urlPayload;
 
-	NSMutableURLRequest *urlRequest = [[[NSMutableURLRequest alloc] initWithURL:self.url] autorelease];
+	if (self.queryParameters && self.queryParameters.count) {
+		urlPayload = [[NSMutableString new] autorelease];
+		
+		NSMutableArray *parameters = [[[NSMutableArray alloc] initWithCapacity:queryParameters.count] autorelease];
+
+		for (NSString *key in self.queryParameters) {
+			[parameters addObject:[NSString stringWithFormat:@"%@=%@",
+								   [key stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+								   [[((NSString *) [self.queryParameters objectForKey:key]) stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@" " withString:@"+"]]];
+		}
+			 
+		urlPayload = [parameters componentsJoinedByString:@"&"];
+	}
+		 
+	NSMutableURLRequest *urlRequest;
 	
+	if (urlPayload) {
+		if ([self.method isEqualToString:@"GET"]) {
+			NSString *urlString = [self.url absoluteString];
+			NSString *actualURL = [NSString stringWithFormat:([urlString rangeOfString:@"?"].location == NSNotFound) ? @"%@?%@" : @"%@&%@",
+								   urlString, urlPayload];
+			
+			urlRequest = [[[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:actualURL]] autorelease];
+		} else {
+			urlRequest = [[[NSMutableURLRequest alloc] initWithURL:self.url] autorelease];
+		}
+	}
+	
+	[urlRequest setHTTPMethod:self.method];
+
 	for (NSString *key in self.HTTPParameters) {
 		[urlRequest setValue:[self.HTTPParameters objectForKey:key] forHTTPHeaderField:key];
 	}
@@ -67,9 +96,21 @@
 #pragma mark -
 #pragma mark Initialization and Management
 
+
+- (id) init {
+	if ((self = [super init])) {
+		self.method = @"GET";
+	}
+	
+	return self;
+}
+
+
 - (void) dealloc {
 	
+	self.method = Nil;
 	self.url = Nil;
+	self.queryParameters = Nil;
 	self.HTTPParameters = Nil;
 	self.target = Nil;
 	self.downloadManager = Nil;

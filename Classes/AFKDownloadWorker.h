@@ -12,7 +12,10 @@
 
 @interface AFKDownloadWorker : NSObject {
 
+	NSString *method;
 	NSURL *url;
+	NSDictionary *queryParameters;
+	
 	NSDictionary *HTTPParameters;
 	
 	AFKDownloadManager *downloadManager;
@@ -30,7 +33,11 @@
 }
 
 
+@property (nonatomic,retain) NSString *method;
+
 @property (nonatomic,retain) NSURL *url;
+@property (nonatomic,retain) NSDictionary *queryParameters;
+
 @property (nonatomic,retain) NSDictionary *HTTPParameters;
 
 @property (nonatomic,retain) AFKDownloadManager *downloadManager;
